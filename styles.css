@@ -138,7 +138,7 @@ a span {
 /* HOMEPAGE START */
 
 .main-text {
-    margin: 130px 0 120px 200px;
+    margin: 150px 0 120px 200px;
     width: 450px;
     height: 382px;
     color: var(--pale-blue);
@@ -157,7 +157,7 @@ a span {
 
 .start {
     margin-left: 450px;
-    margin-top: 270px;
+    margin-top: 300px;
     width: 274px;
     height: 274px;
     border-radius: 50%;
