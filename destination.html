@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+  <style>
+    body {
+      background: url(./assets/destination/background-destination-desktop.jpg);
+      background-size: cover;
+      height: 100vh;
+    }
+    @media only screen and (max-width: 800px) {
+      body {
+        background: url(./assets/destination/background-destination-tablet.jpg);
+        background-size: cover;
+        height: 100vh;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      body {
+        background: url(./assets/destination/background-destination-mobile.jpg);
+        background-size: cover;
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body onload="destinationStart()">
+
+  <!-- TOP START -->
+  <div class="top flex">
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="./assets/shared/logo.svg" alt="logo">
+    </div>
+    <!-- LINE -->
+    <hr>
+    <!-- NAVIGATION BAR -->
+    <nav class="flex">
+      <a href="./index.html"><span>00</span> Home</a>
+      <a href="#" class="current"><span>01</span> Destination</a>
+      <a href="./crew.html"><span>02</span> Crew</a>
+      <a href="./technology.html"><span>03</span> Technology</a>
+    </nav>
+  </div>
+
+  <div class="toggle-menu">
+    <div id="toggle-btn" class="hamburger"></div>
+    <ul id="toggle-options" class="hidden">
+      <li><a href="./index.html"><span>00</span> Home</a></li>
+      <li><a href="#" class="current-toggle"><span>01</span> Destination</a></li>
+      <li><a href="./crew.html"><span>02</span> Crew</a></li>
+      <li><a href="./technology.html"><span>03</span> Technology</a></li>
+    </ul>
+  </div>
+  <!-- TOP END -->
+
+  <!-- MAIN CONTENT START-->
+  <div class="destination-container flex">
+
+    <div class="planet-pic">
+      <h5><span>01</span> Pick your destination</h5>
+      <img class="planet-img" src="./assets/destination/image-moon.png" alt="planet">
+    </div>
+  
+    <div class="planet-des">
+      <nav class="planet flex">
+        <a id="moon" class="current" >Moon</a>
+        <a id="mars">Mars</a>
+        <a id="europa">Europa</a>
+        <a id="titan">Titan</a>
+      </nav>
+      <h2 id="planet-title">Moon</h2>
+      <p id="planet-intro">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.
+      </p>
+      <hr>
+      <div class="info flex">
+        <div class="distance">
+          <div class="subheading-2">Avg. distance</div>
+          <div class="subheading-1" id="planet-distance">384,400 km</div>
+        </div>
+        <div class="time">
+          <div class="subheading-2">Est. travel time</div>
+          <div class="subheading-1" id="planet-time">3 days</div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  <!-- MAIN CONTENT END-->
+
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

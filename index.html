@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+  <style>
+    body {
+      background: url(./assets/home/background-home-desktop.jpg);
+      background-size: cover;
+      height: 100vh;
+    }
+    @media only screen and (max-width: 800px) {
+      body {
+        background: url(./assets/home/background-home-tablet.jpg);
+        background-size: cover;
+        height: 100vh;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      body {
+        background: url(./assets/home/background-home-mobile.jpg);
+        background-size: cover;
+        height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP START -->
+  <div class="top flex">
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="./assets/shared/logo.svg" alt="logo">
+    </div>
+    <!-- LINE -->
+    <hr>
+    <!-- NAVIGATION BAR -->
+    <nav class="flex">
+      <a href="#" class="current"><span>00</span> Home</a>
+      <a href="./destination.html"><span>01</span> Destination</a>
+      <a href="./crew.html"><span>02</span> Crew</a>
+      <a href="./technology.html"><span>03</span> Technology</a>
+    </nav>
+  </div>
+
+  <div class="toggle-menu">
+    <div id="toggle-btn" class="hamburger"></div>
+    <ul id="toggle-options" class="hidden">
+      <li><a href="#" class="current-toggle"><span>00</span> Home</a></li>
+      <li><a href="./destination.html"><span>01</span> Destination</a></li>
+      <li><a href="./crew.html"><span>02</span> Crew</a></li>
+      <li><a href="./technology.html"><span>03</span> Technology</a></li>
+    </ul>
+  </div>
+  <!-- TOP END -->
+
+  <!-- MAIN CONTENT START-->
+  <div class="home-container flex">
+
+    <div class="main-text">
+      <h5>So, you want to travel to</h5>
+      <h1>Space</h1>
+      <p class="des">Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!</p>
+    </div>
+
+    <div class="start">
+      <a href="./destination.html"><p>Explore</p></a>
+    </div>
+
+  </div>
+  <!-- MAIN CONTENT END-->
+
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

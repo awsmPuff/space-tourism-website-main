@@ -1,0 +1,862 @@
+/* font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif;
+font-family: 'Barlow', sans-serif; */
+* {
+    border: none;
+}
+
+:root {
+    --dark-blue: #0B0D17;
+    --white: #FFFFFF;
+    --pale-blue: #D0D6F9;
+    --hover: #979797;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+}
+h2 {
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+}
+h3 {
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+}
+h4 {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+}
+h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+}
+.subheading-1 {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+}
+.subheading-2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+}
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    opacity: 1;
+}
+
+.flex {
+    display: flex;
+}
+
+.top {
+    margin-top: 30px;
+    margin-left: 55px;
+    height: 96px;
+    align-items: center;
+}
+
+.logo img {
+   width: 48px;
+   height: 48px;
+}
+
+hr {
+    width: 550px;
+    z-index: 3;
+    height: 1px;
+    border: 1px solid #FFFFFF;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 64px;
+    opacity: 0.25;
+}
+
+nav {
+    padding: 39px 123px 0;
+    margin-left: -55px;
+    margin-right: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(35px);
+    cursor: pointer;
+}
+
+nav a {
+    margin-right: 48px;
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+    padding-bottom: 39px;
+}
+
+a.current {
+    border-bottom: 3px solid var(--white);
+}
+
+a:hover {
+    border-bottom: 3px solid var(--hover);
+    animation: underline 0.25s;
+}
+
+@keyframes underline {
+    0% {opacity: 0.1;}
+    20% {opacity: 0.3;}
+    40% {opacity: 0.5;}
+    60% {opacity: 0.7;}
+    80% {opacity: 0.9;}
+    100% {opacity: 1;}
+}
+
+a span {
+    font-weight: bold;
+}
+
+
+
+/* HOMEPAGE START */
+
+.main-text {
+    margin: 130px 0 120px 200px;
+    width: 450px;
+    height: 382px;
+    color: var(--pale-blue);
+}
+
+.main-text h5 {
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.main-text h1 {
+    color: var(--white);
+    font-weight: 400;
+    margin: 8px auto 30px;
+}
+
+.start {
+    margin-left: 450px;
+    margin-top: 270px;
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.start:hover {
+    box-shadow: 0 0 0 60px rgba(153, 153, 153, 0.2);
+    transition: 0.4s ease-out;
+}
+
+.start a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.start p {
+    font-size: 32px;
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    margin-top: 120px;
+    letter-spacing: 2px;
+}
+/* HOMEPAGE END */
+
+
+/* DESTINATION START */
+.planet-pic {
+    margin: 100px 46px 80px 170px;
+}
+
+.planet-pic h5 {
+    color: var(--white);
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.planet-pic h5 span {
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.planet-pic img {
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 445px;
+    height: 445px;
+}
+
+.planet-des {
+    margin: 210px auto 100px 120px;
+    width: 450px;
+    height: 472px;
+}
+
+nav.planet {
+    margin-left: 0;
+    background: none;
+    padding: 0 0 30px 0;
+}
+
+nav.planet a {
+    color: var(--pale-blue);
+    margin-right: 40px;
+    padding-bottom: 10px;
+}
+nav.planet a.current {
+    color: var(--white);
+}
+
+.planet-des h2 {
+    color: var(--white);
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.planet-des p {
+    color: var(--pale-blue);
+    margin: 0 auto 55px;
+}
+.planet-des hr {
+    margin-left: 0;
+    width: 445px;
+    border: 1px solid #383B4B;
+    opacity: 1;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+.info {
+    margin-top: 25px;
+}
+.info .distance,
+.info .time {
+    margin-right: 75px;
+}
+.info .subheading-2 {
+    color: var(--pale-blue);
+    margin-bottom: 10px;
+}
+.info .subheading-1 {
+    color: var(--white);
+}
+
+/* DESTINATION END */
+
+
+/* CREW START */
+.crew-container {
+    margin: 60px 120px 0 180px;
+}
+
+.crew-member h5 {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.crew-member h5 span {
+    color: var(--white);
+    opacity: 0.25;
+    font-weight: 700;
+}
+
+.crew-member h4 {
+    margin: 150px auto 20px;
+    color: var(--white);
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+.crew-member h3 {
+    color: var(--white);
+    font-weight: 400;
+    margin: 0 0 40px;
+}
+
+.crew-member p {
+    color: var(--pale-blue);
+    width: 444px;
+    height: 160px;
+}
+
+.crew-menu {
+    position: absolute;
+    bottom: -50px;
+    gap: 39px;
+}
+
+.crew-menu .dot {
+    background: var(--white);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    opacity: 0.17;
+    cursor: pointer;
+}
+
+.crew-menu .active {
+    opacity: 1;
+}
+
+.crew-member .dot:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.5;
+}
+.crew-pic {
+    margin-top: 25px;
+    margin-left: 120px;
+}
+.crew-pic img {
+    width: 568px;
+    height: 680px;
+    margin-bottom: 0;
+}
+/* CREW END */
+
+
+/* TECHNOLOGY START */
+.tech-text {
+    margin-top: 30px;
+    margin-left: 166px;
+}
+.tech-text h5 {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.tech-text h5 span {
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.tech-flex {
+    margin-top: 150px;
+    margin-right: 150px;
+    height: 305px;
+}
+
+.list {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.list .circle {
+    display: flex;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-family: 'Bellefair', serif;
+    cursor: pointer;
+}
+
+.list .circle.now {
+    border: 1px solid var(--white);
+    background: var(--white);
+    color: var(--dark-blue);
+}
+
+.list .circle:hover {
+    border: 1px solid var(--white);
+    transition: 0.25s ease-in-out;
+}
+
+.tech-content {
+    width: 470px;
+}
+
+.tech-content .term {
+    color: var(--pale-blue);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.tech-content h3 {
+    color: var(--white);
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.tech-content p {
+    color: var(--pale-blue);
+}
+
+.tech-pic {
+    position: absolute;
+    margin-top: 100px;
+    right: 0;
+}
+
+.tech-pic img {
+    width: 515px;
+    height: 527px;
+}
+/* TECHNOLOGY END */
+
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 800px) {
+    h5 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        line-height: 24px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    /* NAV BAR */
+    .top {
+        margin-top: 0;
+        margin-left: 39px;
+    }
+    .logo img {
+        margin-left: 0;
+     }
+    nav {
+        font-size: 14px;
+        letter-spacing: 2.36px;
+        line-height: 16.8px;
+        width: 450px;
+        justify-content: space-between;
+        margin-left: 160px;
+        padding: 39px 48px 0;
+    }
+    nav a {
+        padding-bottom: 37px;
+        margin-right: 0;
+    }
+    .top nav a span {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+    .home-container,
+    .destination-container,
+    .crew-container,
+    .tech-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-text {
+        margin: 75px auto;
+        height: 330px;
+        text-align: center;
+    }
+    .main-text h5 {
+        margin-bottom: 10px;
+    }
+    .main-text h1 {
+        margin-bottom: 20px;
+    }
+    .start {
+        margin: 120px auto 40px;
+        width: 242px;
+        height: 242px;
+    }
+    .start p {
+        margin-top: 110px;
+    }
+    /* DESTINATIONS */
+    .planet-pic {
+        margin: auto;
+    }
+    .planet-pic h5,
+    .crew-member h5,
+    .tech-text h5 {
+        position: absolute;
+        top: 100px;
+        left: 38.5px;
+    }
+    .planet-pic img {
+        margin: 125px auto 0;
+        width: 300px;
+        height: 300px;
+    }
+    .planet-des {
+        margin: 25px auto;
+        width: 600px;
+        height: 450px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav.planet {
+        margin: 0 auto;
+        width: 285.5px;
+    }
+    nav.planet a {
+        font-size: 16px;
+        margin-right: 36px;
+    }
+    .planet-des h2 {
+        font-size: 80px;
+        margin: 5px auto;
+    }
+    .planet-des p {
+        width: 573px;
+        margin: 5px auto;
+    }
+    .planet-des hr {
+        display: block;
+        margin: 45px auto 0;
+        width: 573px;
+    }
+    .info .subheading-2 {
+        margin-bottom: 15px;
+    }
+    /* CREW */
+    .crew-container {
+        margin: auto;
+    }
+    .crew-member {
+        text-align: center;
+        width: 520px;
+        height: 290px;
+        margin: 125px auto 20px;
+    }
+    .crew-member h4 {
+        margin: 0 auto 8px;
+        font-size: 24px;
+    }
+    
+    .crew-member h3 {
+        font-size: 40px;
+        margin: 0 auto;
+    }
+    .crew-member p {
+        width: 520px;
+        height: 100px;
+    }
+    .crew-menu {
+        position: relative;
+        margin-top: -25px;
+        gap: 16px;
+        justify-content: center;
+    }
+    .crew-menu .dot {
+        width: 10px;
+        height: 10px;
+    }
+    .crew-pic {
+        margin: -3px auto 0; 
+        width: 458px;
+    }
+    .crew-pic img {
+        width: 458px;
+        height: 580px;
+        margin-bottom: 0;
+    }
+    /* TECHNOLOGY */
+    .tech-container {
+        flex-direction: column-reverse;
+    }
+    .tech-pic {
+        position: relative;
+        margin-top: 124px;
+        width: 100%;
+        background-image: url(./assets/technology/image-launch-vehicle-landscape.jpg);
+        height: 310px;
+    }
+    .tech-pic img {
+        display: none;
+    }
+    .tech-text {
+        margin: 10px auto;
+        text-align: center;
+    }
+    .tech-flex {
+        flex-direction: column;
+        margin: 45px auto;
+        text-align: center;
+    }
+    .list {
+        flex-direction: row;
+        width: 210px;
+        margin: 0 auto 40px; 
+    }
+    .list .circle {
+        width: 58px;
+        height: 58px;
+        font-size: 24px;
+    }
+    .tech-content {
+        width: 458px;
+    }
+    .tech-content h3 {
+        font-size: 40px;
+    }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .top nav {
+        display: none;
+    }
+    .logo img {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 24px;
+        top: 24px;
+     }
+    #toggle-btn {
+        position: absolute;
+        top: 33px;
+        right: 24px;
+        width: 24px;
+        height: 21px;
+    }
+    .hamburger {
+        background-image: url(./assets/shared/icon-hamburger.svg);
+    }
+    .close {
+        background-image: url(./assets/shared/icon-close.svg);
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        z-index: 3;
+    }
+    .close:hover {
+        transform: rotate(-120deg);
+        transition: transform 0.5s ease;
+    }
+    .toggle-menu ul {
+        position: absolute;
+        top: -15px;
+        right: 0;
+        width: 220px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(35px);
+        cursor: pointer;
+        transition: 0.3s linear;
+        z-index: 2;
+    }
+    .toggle-menu ul li {
+        position: relative;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        list-style: none;
+        top: 118px;
+        margin-left: 15px;
+        margin-bottom: 32px;
+    }
+    .toggle-menu ul li a:hover {
+        border-bottom: 2px solid var(--hover);
+        animation: underline 0.25s;
+    }
+    .current-toggle {
+        border-bottom: 2px solid var(--white);
+    }
+    .toggle-menu ul li a {
+        padding-bottom: 5px;
+        color: var(--white);
+        text-decoration: none;
+    }
+    /* HOME PAGE */
+    .main-text {
+        margin: 0 auto;
+        height: 276px;
+        width: 327px;
+    }
+    .main-text h5 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .main-text h1 {
+        font-size: 80px;
+    }
+    .main-text p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .start {
+        margin: 100px auto 48px;
+        width: 150px;
+        height: 150px;
+    }
+    .start:hover {
+        box-shadow: 0 0 0 50px rgba(153, 153, 153, 0.2);
+    }
+    .start p {
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    /* DESTINATION PAGE */
+    .planet-pic h5,
+    .crew-member h5,
+    .tech-text h5 {
+        top: 55px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 230px;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+    .planet-pic img {
+        margin: 48px auto 0;
+        width: 170px;
+        height: 170px;
+    }
+    .planet-des {
+        margin: 30px auto;
+        width: 327px;
+        height: 480px;
+    }
+    nav.planet {
+        margin: 0 auto;
+        width: 237.5px;
+        height: 28px;
+        padding-bottom: 13px;
+    }
+    nav.planet a {
+        font-size: 14px;
+        letter-spacing: 2.36px;
+        margin-right: 26px;
+        padding-bottom: 5px;
+    }
+    .planet-des h2 {
+        font-size: 56px;
+        margin: 10px auto 0;
+    }
+    .planet-des p {
+        font-size: 15px;
+        line-height: 25px;
+        width: 327px;
+        height: 170px;
+        margin: 0 auto;
+    }
+    .planet-des hr {
+        margin: 30px auto 0;
+        width: 327px;
+    }
+    .info {
+        flex-direction: column;
+        align-items: center;
+        margin: 32px auto 0;
+    }
+    .info .subheading-2 {
+
+        margin-bottom: 12px;
+    }
+    .info .distance,
+    .info .time {
+    margin: 0 auto 32px;
+    }
+    /* CREW PAGE */
+    .crew-container {
+        flex-direction: column-reverse;
+    }
+    .crew-pic {
+        margin: 40px auto 0; 
+        width: 327px;
+        height: 223px;
+        display: flex;
+        justify-content: center;
+    }
+    .crew-pic img {
+        width: 177px;
+        height: 222px;
+    }
+    .crew-member {
+        width: 327px;
+        height: 212px;
+        margin: 32px auto 50px;
+    }
+    .crew-menu {
+        position: absolute;
+        margin: auto;
+        top: 394px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 88px;
+    }
+    .crew-member h4 {
+        margin: 32px auto 8px;
+        font-size: 16px;
+    }
+    .crew-member h3 {
+        font-size: 24px;
+    }
+    .crew-member p {
+        width: 327px;
+        font-size: 15px;
+    }
+    /* TECHNOLOGY PAGE */
+    .tech-pic {
+        margin-top: 32px;
+        background-image: url(./assets/technology/image-launch-vehicle-landscape.jpg);
+        background-size: cover;
+        height: 170px;
+    }
+    .tech-text {
+        margin: 34px auto;
+    }
+    .tech-flex {
+        margin: 0 auto;
+    }
+    .list {
+        width: 152px;
+        gap: 16px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    .list .circle {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .tech-content {
+        width: 327px;
+        margin-top: 26px;
+    }
+    .tech-content .term {
+        font-size: 14px;
+    }
+    .tech-content h3 {
+        font-size: 24px;
+    }
+    .tech-content p {
+        font-size: 15px;
+    }
+    
+}
