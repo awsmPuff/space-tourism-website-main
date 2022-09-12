@@ -223,7 +223,7 @@ function init() {
             crewImg.style.height = "572px";
             crewImg.style.marginTop = "25px";
         }
-        if(window.matchMedia("(max-width: 400px)").matches) {
+        if(window.matchMedia("(max-width: 480px)").matches) {
           crewImg.style.width = "177px";
           crewImg.style.height = "222px";
           crewImg.style.marginTop = "0";
@@ -246,7 +246,7 @@ function init() {
           crewImg.style.height = "532px";
           crewImg.style.marginTop = "70px";
         }
-        if(window.matchMedia("(max-width: 400px)").matches) {
+        if(window.matchMedia("(max-width: 480px)").matches) {
           crewImg.style.width = "154px";
           crewImg.style.height = "222px";
           crewImg.style.marginTop = "0";
@@ -269,7 +269,7 @@ function init() {
           crewImg.style.height = "540px";
           crewImg.style.marginTop = "60px";
         }
-        if(window.matchMedia("(max-width: 400px)").matches) {
+        if(window.matchMedia("(max-width: 480px)").matches) {
           crewImg.style.width = "181px";
           crewImg.style.height = "222px";
           crewImg.style.marginTop = "0";
@@ -292,7 +292,7 @@ function init() {
           crewImg.style.height = "532px";
           crewImg.style.marginTop = "70px";
         }
-        if(window.matchMedia("(max-width: 400px)").matches) {
+        if(window.matchMedia("(max-width: 480px)").matches) {
           crewImg.style.width = "226px";
           crewImg.style.height = "222px";
           crewImg.style.marginTop = "0";
